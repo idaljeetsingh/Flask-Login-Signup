@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+<body>
+<form action="{{ url_for('register') }}" method="post">
+    <label> First Name
+        <input type="text" name="usr_fname">
+    </label>
+    <label> Last Name
+        <input type="text" name="usr_lname">
+    </label>
+    <label> Email
+        <input type="email" name="usr_eml">
+    </label>
+    <label> Mobile Number
+        <input type="number" name="usr_phone">
+    </label>
+    <label> Password
+        <input type="password" name="usr_pwd">
+    </label>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
